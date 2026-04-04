@@ -39,12 +39,20 @@ export function Hero() {
 
           <div className="flex flex-wrap gap-6 pt-4 relative">
             <div className="-rotate-2 hover:rotate-0 transition-brutal">
-              <Button variant="primary" className="flex items-center gap-2 text-lg py-4 px-8">
-                View Work <ArrowRight size={24} className="stroke-[3]" />
+              <Button 
+                variant="primary" 
+                className="flex items-center gap-2 text-lg py-4 px-8"
+                onClick={() => window.open("/your-resume-link.pdf", "_blank")}
+              >
+                Resume <ArrowRight size={24} className="stroke-[3]" />
               </Button>
             </div>
             <div className="rotate-3 hover:rotate-0 transition-brutal">
-              <Button variant="secondary" className="flex items-center gap-2 text-lg py-4 px-8">
+              <Button 
+                variant="secondary" 
+                className="flex items-center gap-2 text-lg py-4 px-8"
+                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              >
                 <Mail size={24} className="stroke-[3]" /> Contact Me
               </Button>
             </div>
