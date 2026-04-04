@@ -6,6 +6,11 @@ import { GitHubCalendar } from "react-github-calendar";
 import { Tooltip } from "react-tooltip";
 
 export function GithubGraph() {
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const explicitTheme = {
     light: ['#FFFDF5', '#fce883', '#fadc46', '#FFD93D', '#C4B5FD'],
@@ -26,23 +31,31 @@ export function GithubGraph() {
             <span className="absolute inset-0 flex items-center justify-center font-black uppercase text-[10px] opacity-0 group-hover:opacity-100 transition-opacity text-center leading-none">Terminally<br/>Online</span>
           </div>
 
-          <div className="mt-8 flex justify-center overflow-x-auto pb-4 github-calendar-wrapper font-bold">
+          <div className="mt-8 flex justify-center overflow-x-auto pb-4 github-calendar-wrapper font-bold min-h-[200px]">
              <div className="min-w-fit">
-               <GitHubCalendar 
-                 username="Rachitneema03" 
-                 theme={explicitTheme}
-                 colorScheme="light"
-                 blockSize={22}
-                 blockMargin={8}
-                 fontSize={16}
-                 renderBlock={(block, activity) => 
-                   React.cloneElement(block, {
-                     'data-tooltip-id': 'github-tooltip',
-                     'data-tooltip-html': `${activity.count} contributions on ${activity.date}`,
-                   })
-                 }
-               />
-               <Tooltip id="github-tooltip" className="brutalist-tooltip" />
+               {mounted ? (
+                 <>
+                   <GitHubCalendar 
+                     username="Rachitneema03" 
+                     theme={explicitTheme}
+                     colorScheme="light"
+                     blockSize={22}
+                     blockMargin={8}
+                     fontSize={16}
+                     renderBlock={(block, activity) => 
+                       React.cloneElement(block, {
+                         'data-tooltip-id': 'github-tooltip',
+                         'data-tooltip-html': `${activity.count} contributions on ${activity.date}`,
+                       })
+                     }
+                   />
+                   <Tooltip id="github-tooltip" className="brutalist-tooltip" />
+                 </>
+               ) : (
+                 <div className="flex items-center justify-center h-48 w-full">
+                    <span className="text-xl font-black uppercase animate-pulse">Loading Commits...</span>
+                 </div>
+               )}
              </div>
           </div>
           
