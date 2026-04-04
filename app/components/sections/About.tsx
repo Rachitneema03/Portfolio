@@ -36,8 +36,12 @@ export function About() {
              <h3 className="text-4xl font-black">CONSISTENT BUILDER</h3>
             <p className="font-bold uppercase tracking-widest mt-2">CODE. BREAK. REPEAT.</p>
           </Card>
-          <Card bg="cream" className="rotate-1 col-span-2 h-32 flex flex-col justify-center items-center text-center">
-             <p className="text-2xl font-black italic">"Code is just structured thought."</p>
+          <Card bg="cream" className="rotate-1 col-span-2 h-32 flex flex-col justify-center items-center text-center relative group cursor-crosshair">
+             <p className="text-2xl font-black italic group-hover:hidden">"Code is just structured thought."</p>
+             <div className="hidden group-hover:flex flex-col items-center">
+               <p className="text-lg font-black italic line-through decoration-red-500 decoration-4">"Code is just structured thought."</p>
+               <p className="text-xl font-bold uppercase mt-1 text-violet">"Code is 90% StackOverflow."</p>
+             </div>
           </Card>
         </div>
       </div>

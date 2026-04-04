@@ -33,12 +33,17 @@ export function Contact() {
                    <label className="font-bold uppercase tracking-wider text-sm">Email</label>
                    <input type="email" className="border-4 border-black p-3 font-bold focus:outline-none focus:bg-yellow focus:-translate-y-1 focus:brutalist-shadow transition-brutal" placeholder="JANE@EXAMPLE.COM" />
                  </div>
-                 <div className="flex flex-col gap-2">
+                 <div className="flex flex-col gap-2 relative group cursor-text">
                    <label className="font-bold uppercase tracking-wider text-sm">Message</label>
                    <textarea rows={4} className="border-4 border-black p-3 font-bold focus:outline-none focus:bg-yellow focus:-translate-y-1 focus:brutalist-shadow transition-brutal" placeholder="LET'S BUILD SOMETHING BEAUTIFUL..."></textarea>
+                   <span className="absolute bottom-2 right-4 text-[10px] opacity-0 group-focus-within:opacity-30 font-mono transition-opacity pointer-events-none">
+                     (OR REPORT BUGS)
+                   </span>
                  </div>
-                 <Button variant="accent" className="mt-4 text-xl py-4 flex items-center justify-center gap-2">
-                    <Mail size={24} className="stroke-[3]" /> SEND IT
+                 <Button variant="accent" className="mt-4 text-xl py-4 flex items-center justify-center gap-2 group relative overflow-hidden">
+                    <Mail size={24} className="stroke-[3] group-hover:translate-x-40 transition-transform duration-300 absolute left-1/2 -translate-x-12" /> 
+                    <span className="group-hover:opacity-0 transition-opacity duration-150 relative z-10 pl-6">SEND IT</span>
+                    <span className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-black tracking-widest z-20">YEET IT</span>
                  </Button>
               </form>
            </Card>

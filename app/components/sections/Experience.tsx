@@ -55,7 +55,11 @@ export function Experience() {
 
       <div className="relative max-w-4xl mx-auto">
         {/* Vertical Line */}
-        <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-2 bg-black transform -translate-x-1/2 -z-10"></div>
+        <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-2 bg-black transform -translate-x-1/2 -z-10 group">
+           <span className="absolute -bottom-16 left-1/2 -translate-x-1/2 text-[10px] font-mono whitespace-nowrap opacity-20 hover:opacity-100 rotate-90 transition-opacity select-none tracking-widest cursor-crosshair">
+             // TODO: Refactor my entire life
+           </span>
+        </div>
         
         <div className="space-y-12">
           {experiences.map((exp, i) => (

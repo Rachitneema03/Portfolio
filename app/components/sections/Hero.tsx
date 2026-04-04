@@ -90,9 +90,11 @@ export function Hero() {
             </div>
 
             {/* Polaroid style footer */}
-            <div className="mt-4 flex justify-between items-center px-1">
+            <div className="mt-4 flex flex-wrap justify-between items-center px-1">
               <span className="font-bold uppercase tracking-widest text-lg">Est. 2026</span>
-              <div className="w-4 h-4 bg-black rounded-full"></div>
+              <div className="h-4 bg-black rounded-full text-[10px] font-bold text-white flex items-center justify-center transition-all duration-300 overflow-hidden whitespace-nowrap w-4 hover:w-32 cursor-default group hover:px-2">
+                 <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 uppercase">npm run survive</span>
+              </div>
             </div>
           </div>
 

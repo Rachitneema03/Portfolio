@@ -21,8 +21,9 @@ export function GithubGraph() {
             <h3 className="text-2xl font-black uppercase">Contributions</h3>
           </div>
           
-          <div className="absolute -top-4 -right-4 bg-violet border-4 border-black px-4 py-1 -rotate-6 shadow-[2px_2px_0_0_#000] z-10">
-            <span className="font-bold uppercase tracking-widest text-sm">Real Data</span>
+          <div className="absolute -top-4 -right-4 bg-violet border-4 border-black px-4 py-1 -rotate-6 shadow-[2px_2px_0_0_#000] z-10 group cursor-help">
+            <span className="font-bold uppercase tracking-widest text-sm group-hover:opacity-0 transition-opacity">Real Data</span>
+            <span className="absolute inset-0 flex items-center justify-center font-black uppercase text-[10px] opacity-0 group-hover:opacity-100 transition-opacity text-center leading-none">Terminally<br/>Online</span>
           </div>
 
           <div className="mt-8 flex justify-center overflow-x-auto pb-4 github-calendar-wrapper font-bold">

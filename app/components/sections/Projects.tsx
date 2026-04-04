@@ -46,11 +46,16 @@ export function Projects() {
 
   return (
     <SectionWrapper id="projects" bg="violet" pattern={true}>
-      <div className="flex justify-between items-end mb-16 border-b-8 border-black pb-4">
+      <div className="flex justify-between items-end mb-16 border-b-8 border-black pb-4 relative">
          <h2 className="text-6xl md:text-8xl font-black uppercase tracking-tighter">
             <span className="text-stroke-bg text-white">Selected Work</span>
          </h2>
-         <Badge color="yellow" className="text-2xl py-2 px-4 shadow-[4px_4px_0_0_#000] rotate-3 -translate-y-4">PROJECTS</Badge>
+         <Badge color="yellow" className="text-2xl py-2 px-4 shadow-[4px_4px_0_0_#000] rotate-3 -translate-y-4 relative z-10">PROJECTS</Badge>
+         
+         {/* Subtle Easter Egg */}
+         <span className="absolute -right-8 top-12 rotate-90 text-[10px] font-mono opacity-20 hover:opacity-100 transition-opacity hidden md:block select-none cursor-default">
+           /* Pls don't inspect element */
+         </span>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
