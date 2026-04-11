@@ -26,7 +26,7 @@ export function Skills() {
         {/* Left Side: Massive Header */}
         <div className="w-full lg:w-1/3 flex flex-col items-start z-10 relative">
           <h2 className="text-7xl md:text-8xl lg:text-[8rem] font-black uppercase tracking-tighter leading-[0.85] mb-8">
-            <span className="text-stroke-bg text-transparent inline-block -rotate-2">Tech</span><br/>
+            <span className="text-stroke-bg text-white inline-block -rotate-2">Tech</span><br/>
             <span className="bg-yellow text-black px-4 py-2 inline-block rotate-2 shadow-[8px_8px_0_0_#FFF]">Stack</span>
           </h2>
           <p className="text-2xl font-bold border-l-8 border-yellow pl-6 py-2 text-cream">

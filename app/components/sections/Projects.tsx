@@ -26,22 +26,22 @@ export function Projects() {
       liveLink: "https://krishimitra-ai.streamlit.app/",
       codeLink: "https://github.com/Rachitneema03/KrishiMitra-AI.git"
     },
-    {
-      title: "Terminal Portfolio",
-      desc: "Command-line style portfolio turned web app for the ultimate flex.",
-      tech: ["Vue", "Node.js"],
-      rotate: "rotate-2",
-      liveLink: "https://your-live-url.com",
-      codeLink: "https://github.com/yourusername/terminal-portfolio"
-    },
-    {
-      title: "Blockchain Explorer",
-      desc: "View crypto transactions with zero fluff and maximum impact.",
-      tech: ["React", "Web3.js", "GraphQL"],
-      rotate: "-rotate-2",
-      liveLink: "https://your-live-url.com",
-      codeLink: "https://github.com/yourusername/blockchain-explorer"
-    }
+    // {
+    //   title: "Terminal Portfolio",
+    //   desc: "Command-line style portfolio turned web app for the ultimate flex.",
+    //   tech: ["Vue", "Node.js"],
+    //   rotate: "rotate-2",
+    //   liveLink: "https://your-live-url.com",
+    //   codeLink: "https://github.com/yourusername/terminal-portfolio"
+    // },
+    // {
+    //   title: "Blockchain Explorer",
+    //   desc: "View crypto transactions with zero fluff and maximum impact.",
+    //   tech: ["React", "Web3.js", "GraphQL"],
+    //   rotate: "-rotate-2",
+    //   liveLink: "https://your-live-url.com",
+    //   codeLink: "https://github.com/yourusername/blockchain-explorer"
+    // }
   ];
 
   return (

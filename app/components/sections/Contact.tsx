@@ -31,11 +31,11 @@ export function Contact() {
                  
                  <div className="flex flex-col gap-2">
                    <label className="font-bold uppercase tracking-wider text-sm">Name</label>
-                   <input type="text" name="name" required className="border-4 border-black p-3 font-bold focus:outline-none focus:bg-yellow focus:-translate-y-1 focus:brutalist-shadow transition-brutal" placeholder="JANE DOE" />
+                   <input type="text" name="name" required className="border-4 border-black p-3 font-bold focus:outline-none focus:bg-yellow focus:-translate-y-1 focus:brutalist-shadow transition-brutal" placeholder="Your Name" />
                  </div>
                  <div className="flex flex-col gap-2">
                    <label className="font-bold uppercase tracking-wider text-sm">Email</label>
-                   <input type="email" name="email" required className="border-4 border-black p-3 font-bold focus:outline-none focus:bg-yellow focus:-translate-y-1 focus:brutalist-shadow transition-brutal" placeholder="JANE@EXAMPLE.COM" />
+                   <input type="email" name="email" required className="border-4 border-black p-3 font-bold focus:outline-none focus:bg-yellow focus:-translate-y-1 focus:brutalist-shadow transition-brutal" placeholder="Your Email" />
                  </div>
                  <div className="flex flex-col gap-2 relative group cursor-text">
                    <label className="font-bold uppercase tracking-wider text-sm">Message</label>
